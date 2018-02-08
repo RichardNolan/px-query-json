@@ -1,0 +1,23 @@
+{
+  "name": "px-query-json",
+  "version": "0.0.1",
+  "description": "An adapter for querying a PC-axis file, returning JSON",
+  "main": "lib/px-query-json.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RichardNolan/px-query-json.git"
+  },
+  "author": "Richard Nolan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RichardNolan/px-query-json/issues"
+  },
+  "homepage": "https://github.com/RichardNolan/px-query-json#readme",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "px": "^0.1.2"
+  }
+}
