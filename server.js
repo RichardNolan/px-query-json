@@ -6,7 +6,7 @@ let readPX = px.read('./tem01.px')
 
 readPX.then(data=>{
     // console.log(px.metadata())
-    console.log(px.variables())
+    console.log(px.data())
 },err=>{
     console.log("Failed to read any data, the chosen file may not be a PC-axis file (.px)")
 });

@@ -1,20 +1,20 @@
 // taken from my other repo px-test
 
 function readPX(data){
-  const PX = new Px(data);
-  const px = {}
-  px.metadata = PX.metadata
-  px.keywords = PX.keywords();
-  px.variables = PX.variables();
-  px.variable = index=>PX.variable(index);
-  px.values = variable=>PX.values(variable);
-  px.codes = variable=>PX.codes(variable);
+//   const PX = new Px(data);
+//   const px = {}
+//   px.metadata = PX.metadata
+//   px.keywords = PX.keywords();
+//   px.variables = PX.variables();
+//   px.variable = index=>PX.variable(index);
+//   px.values = variable=>PX.values(variable);
+//   px.codes = variable=>PX.codes(variable);
 
-  px.data = {}
-  for(let vr of px.variables){
-    let data = _.zip( px.values(vr), px.codes(vr) )
-    px.data[vr.replace(" ", "")] = data.map((arr, index)=>{  return {name:arr[0], code:arr[1], index:index}   })
-  }
+//   px.data = {}
+//   for(let vr of px.variables){
+//     let data = _.zip( px.values(vr), px.codes(vr) )
+//     px.data[vr.replace(" ", "")] = data.map((arr, index)=>{  return {name:arr[0], code:arr[1], index:index}   })
+//   }
 
   px.getData = (arr=new Array(px.variable.length).fill(0))=>PX.datum(arr);
   px.column = arr=>PX.dataCol(arr);
